@@ -1,0 +1,30 @@
+{
+  "name": "Embeddings",
+  "fields": [
+    {
+      "fieldName": "embedding",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "person",
+      "otherEntityRelationshipName": "embeddings",
+      "relationshipName": "person"
+    }
+  ],
+  "entityTableName": "embeddings",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "FacialRecognition",
+  "clientRootFolder": "FacialRecognition",
+  "databaseType": "sql",
+  "changelogDate": "20211206134410"
+}

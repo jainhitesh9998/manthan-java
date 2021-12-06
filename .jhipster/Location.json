@@ -1,0 +1,46 @@
+{
+  "name": "Location",
+  "fields": [
+    {
+      "fieldName": "streetAddress",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "postalCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "city",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stateProvince",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "country",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "person",
+      "otherEntityRelationshipName": "location",
+      "relationshipName": "person"
+    }
+  ],
+  "entityTableName": "location",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "FacialRecognition",
+  "clientRootFolder": "FacialRecognition",
+  "databaseType": "sql",
+  "changelogDate": "20211206134409"
+}

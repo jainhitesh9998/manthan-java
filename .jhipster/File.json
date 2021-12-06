@@ -1,0 +1,35 @@
+{
+  "name": "File",
+  "fields": [
+    {
+      "fieldName": "location",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "source",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "encoding",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "identifier",
+      "fieldType": "Long"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "file",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "FacialRecognition",
+  "clientRootFolder": "FacialRecognition",
+  "databaseType": "sql",
+  "changelogDate": "20211206134411"
+}

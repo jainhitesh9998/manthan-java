@@ -1,0 +1,61 @@
+
+entity Person {
+	name String
+    age Long
+    email String
+    phone String
+}
+
+
+entity Location {
+	streetAddress String,
+	postalCode String,
+	city String,
+	stateProvince String
+    country String
+}
+
+entity Embeddings {
+	embedding String
+}
+
+entity File {
+	location String
+    source String
+    encoding String
+    identifier Long
+}
+entity Search {
+	result String
+    time Instant
+    initiatedBy String
+}
+
+/**
+ * Task entity.
+ * @author The JHipster team.
+ */
+
+
+
+// defining multiple OneToMany relationships with comments
+relationship ManyToOne {
+	Location{person} to Person{location}
+    Embeddings{person} to Person{embeddings}
+}
+
+
+// defining multiple oneToOne relationships
+
+// Set pagination options
+
+//paginate Person with pagination
+
+// Use Data Transfer Objects (DTO)
+dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix

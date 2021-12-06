@@ -1,0 +1,48 @@
+{
+  "name": "Person",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "age",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "location",
+      "otherEntityRelationshipName": "person",
+      "relationshipName": "location"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "embeddings",
+      "otherEntityRelationshipName": "person",
+      "relationshipName": "embeddings"
+    }
+  ],
+  "entityTableName": "person",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceImpl",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": "*",
+  "microserviceName": "FacialRecognition",
+  "clientRootFolder": "FacialRecognition",
+  "databaseType": "sql",
+  "changelogDate": "20211206134408"
+}
